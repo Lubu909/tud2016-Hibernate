@@ -4,14 +4,22 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQueries({
+	@NamedQuery(name = "character.all", query = "SELECT c FROM Character c"),
+	@NamedQuery(name = "character.byNick", query = "SELECT c FROM Character c WHERE c.nick = :nick")
+})
 public class Character {
 	private int idCharacter;
 	private String nick;
 	private String characterClass;
 	private String characterRace;
 	private int level;
+	
+	//private Account account;
 	
 	public Character(){
 	}
@@ -65,4 +73,13 @@ public class Character {
 	public void setLevel(int level) {
 		this.level = level;
 	}
+/*
+	@ManyToOne
+	public Account getAccount() {
+		return account;
+	}
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+*/
 }

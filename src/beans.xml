@@ -52,5 +52,42 @@
 		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<property name="sessionFactory" ref="hibernateSessionFactory" />
 	</bean>
+	
+	<bean id="account1" class="model.Account">
+		<property name="login" value="qwertyui" />
+		<property name="password" value="1234" />
+	</bean>
+	
+	<bean id="account2" class="model.Account">
+		<property name="login" value="zxcvbnm" />
+		<property name="password" value="qwerty" />
+	</bean>
+	
+	<bean id="character1" class="model.Character">
+		<property name="nick" value="Gandalf" />
+		<property name="characterClass" value="Mage" />
+		<property name="characterRace" value="Human" />
+		<property name="level" value="100" />
+	</bean>
+	
+	<bean id="character2" class="model.Character">
+		<property name="nick" value="Zenek" />
+		<property name="characterClass" value="Warrior" />
+		<property name="characterRace" value="Human" />
+		<property name="level" value="50" />
+	</bean>
 
+	<bean id="character3" class="model.Character">
+		<property name="nick" value="Legolas" />
+		<property name="characterClass" value="Hunter" />
+		<property name="characterRace" value="Elf" />
+		<property name="level" value="90" />
+	</bean>
+	
+	<bean id="character4" class="model.Character">
+		<property name="nick" value="Garrosh" />
+		<property name="characterClass" value="Warrior" />
+		<property name="characterRace" value="Orc" />
+		<property name="level" value="95" />
+	</bean>
 </beans>

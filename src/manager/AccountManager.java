@@ -4,7 +4,7 @@ import java.util.List;
 
 import model.Account;
 
-public interface IAccountManager {
+public interface AccountManager {
 	public void addAccount(Account account);
 	public void delAccount(Account account);
 	public Account getAccount(int id);

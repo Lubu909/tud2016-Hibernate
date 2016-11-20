@@ -1,17 +1,32 @@
 package model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+
+import model.Character;
 
 @Entity
+@NamedQueries({
+	@NamedQuery(name = "account.all", query = "SELECT a FROM Account a"),
+	@NamedQuery(name = "account.byLogin", query = "SELECT a FROM Account a WHERE a.login = :login")
+})
 public class Account {
 	private int id;
 	private String login;
 	private String password;
 	private String registrationDate;
 	private String lastLoginDate;
+	
+	private List<Character> characters;
 	
 	public Account(){
 	}
@@ -71,4 +86,14 @@ public class Account {
 	public void setLastLoginDate(String lastLoginDate) {
 		this.lastLoginDate = lastLoginDate;
 	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	public List<Character> getCharacters() {
+		return characters;
+	}
+
+	public void setCharacters(List<Character> characters) {
+		this.characters = characters;
+	}
+	
 }

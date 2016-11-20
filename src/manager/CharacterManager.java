@@ -4,7 +4,7 @@ import java.util.List;
 
 import model.Character;
 
-public interface ICharacterManager {
+public interface CharacterManager {
 	public void addCharacter(Character character);
 	public void delCharacter(Character character);
 	public Character getCharacter(int id);
