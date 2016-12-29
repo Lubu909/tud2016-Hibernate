@@ -1,8 +1,8 @@
-package manager;
+package com.tud2016Hibernate.manager;
 
 import java.util.List;
 
-import model.Account;
+import com.tud2016Hibernate.model.Account;
 
 public interface AccountManager {
 	public void addAccount(Account account);

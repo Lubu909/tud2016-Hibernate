@@ -19,7 +19,7 @@
 		configure as beans
 	-->
 	<context:component-scan
-		base-package="manager" />
+		base-package="com.tud2016Hibernate.manager" />
  	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 	destroy-method="close">
@@ -45,7 +45,7 @@
         <prop key="hibernate.show_sql">true</prop>
 			</props>
 		</property>
-		<property name="packagesToScan" value="model" />
+		<property name="packagesToScan" value="com.tud2016Hibernate.model" />
 	</bean>
 
 	<bean id="txManager"
@@ -53,38 +53,43 @@
 		<property name="sessionFactory" ref="hibernateSessionFactory" />
 	</bean>
 	
-	<bean id="account1" class="model.Account">
+	<bean id="account1" class="com.tud2016Hibernate.model.Account">
 		<property name="login" value="qwertyui" />
 		<property name="password" value="1234" />
 	</bean>
 	
-	<bean id="account2" class="model.Account">
+	<bean id="account2" class="com.tud2016Hibernate.model.Account">
 		<property name="login" value="zxcvbnm" />
 		<property name="password" value="qwerty" />
 	</bean>
 	
-	<bean id="character1" class="model.Character">
+	<bean id="account3" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase3" />
+		<property name="password" value="qwerty1234" />
+	</bean>
+	
+	<bean id="character1" class="com.tud2016Hibernate.model.Character">
 		<property name="nick" value="Gandalf" />
 		<property name="characterClass" value="Mage" />
 		<property name="characterRace" value="Human" />
 		<property name="level" value="100" />
 	</bean>
 	
-	<bean id="character2" class="model.Character">
+	<bean id="character2" class="com.tud2016Hibernate.model.Character">
 		<property name="nick" value="Zenek" />
 		<property name="characterClass" value="Warrior" />
 		<property name="characterRace" value="Human" />
 		<property name="level" value="50" />
 	</bean>
 
-	<bean id="character3" class="model.Character">
+	<bean id="character3" class="com.tud2016Hibernate.model.Character">
 		<property name="nick" value="Legolas" />
 		<property name="characterClass" value="Hunter" />
 		<property name="characterRace" value="Elf" />
 		<property name="level" value="90" />
 	</bean>
 	
-	<bean id="character4" class="model.Character">
+	<bean id="character4" class="com.tud2016Hibernate.model.Character">
 		<property name="nick" value="Garrosh" />
 		<property name="characterClass" value="Warrior" />
 		<property name="characterRace" value="Orc" />

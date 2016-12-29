@@ -1,4 +1,4 @@
-package manager;
+package com.tud2016Hibernate.manager;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import model.Character;
+import com.tud2016Hibernate.model.Character;
 
 @Component
 @Transactional

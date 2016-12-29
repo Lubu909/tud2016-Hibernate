@@ -1,8 +1,8 @@
-package manager;
+package com.tud2016Hibernate.manager;
 
 import java.util.List;
 
-import model.Character;
+import com.tud2016Hibernate.model.Character;
 
 public interface CharacterManager {
 	public void addCharacter(Character character);

@@ -1,5 +1,6 @@
-package model;
+package com.tud2016Hibernate.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -12,7 +13,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
-import model.Character;
+import com.tud2016Hibernate.model.Character;
 
 @Entity
 @NamedQueries({
@@ -26,7 +27,7 @@ public class Account {
 	private String registrationDate;
 	private String lastLoginDate;
 	
-	private List<Character> characters;
+	private List<Character> characters = new ArrayList<Character>();
 	
 	public Account(){
 	}
