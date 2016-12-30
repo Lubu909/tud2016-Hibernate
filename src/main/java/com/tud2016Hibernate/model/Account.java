@@ -3,15 +3,7 @@ package com.tud2016Hibernate.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 import com.tud2016Hibernate.model.Character;
 
@@ -22,6 +14,7 @@ import com.tud2016Hibernate.model.Character;
 })
 public class Account {
 	private int id;
+	@Column(unique = true)
 	private String login;
 	private String password;
 	private String registrationDate;

@@ -1,11 +1,6 @@
 package com.tud2016Hibernate.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 
 @Entity
 @NamedQueries({
@@ -14,12 +9,11 @@ import javax.persistence.NamedQuery;
 })
 public class Character {
 	private int idCharacter;
+	@Column(unique = true)
 	private String nick;
 	private String characterClass;
 	private String characterRace;
 	private int level;
-	
-	//private Account account;
 	
 	public Character(){
 	}
@@ -73,13 +67,4 @@ public class Character {
 	public void setLevel(int level) {
 		this.level = level;
 	}
-/*
-	@ManyToOne
-	public Account getAccount() {
-		return account;
-	}
-	public void setAccount(Account account) {
-		this.account = account;
-	}
-*/
 }

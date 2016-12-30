@@ -67,32 +67,126 @@
 		<property name="login" value="TestCase3" />
 		<property name="password" value="qwerty1234" />
 	</bean>
+
+	<bean id="account4" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase4" />
+		<property name="password" value="qwerty1234" />
+	</bean>
+
+	<bean id="account5" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase5" />
+		<property name="password" value="qwerty1234" />
+	</bean>
+
+	<bean id="account6" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase6" />
+		<property name="password" value="qwerty1234" />
+	</bean>
+
+	<bean id="account7" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase7" />
+		<property name="password" value="qwerty1234" />
+	</bean>
+
+	<bean id="account8" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase8" />
+		<property name="password" value="qwerty1234" />
+	</bean>
+
+	<bean id="account9" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase9" />
+		<property name="password" value="qwerty1234" />
+	</bean>
+
+	<bean id="account10" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase10" />
+		<property name="password" value="qwerty1234" />
+	</bean>
+
+	<bean id="account11" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase11" />
+		<property name="password" value="qwerty1234" />
+	</bean>
+
+	<bean id="account12" class="com.tud2016Hibernate.model.Account">
+		<property name="login" value="TestCase12" />
+		<property name="password" value="qwerty1234" />
+	</bean>
 	
 	<bean id="character1" class="com.tud2016Hibernate.model.Character">
-		<property name="nick" value="Gandalf" />
+		<property name="nick" value="Character1" />
 		<property name="characterClass" value="Mage" />
 		<property name="characterRace" value="Human" />
 		<property name="level" value="100" />
 	</bean>
 	
 	<bean id="character2" class="com.tud2016Hibernate.model.Character">
-		<property name="nick" value="Zenek" />
+		<property name="nick" value="Character2" />
 		<property name="characterClass" value="Warrior" />
 		<property name="characterRace" value="Human" />
 		<property name="level" value="50" />
 	</bean>
 
 	<bean id="character3" class="com.tud2016Hibernate.model.Character">
-		<property name="nick" value="Legolas" />
+		<property name="nick" value="Character3" />
 		<property name="characterClass" value="Hunter" />
 		<property name="characterRace" value="Elf" />
 		<property name="level" value="90" />
 	</bean>
 	
 	<bean id="character4" class="com.tud2016Hibernate.model.Character">
-		<property name="nick" value="Garrosh" />
+		<property name="nick" value="Character4" />
 		<property name="characterClass" value="Warrior" />
 		<property name="characterRace" value="Orc" />
+		<property name="level" value="95" />
+	</bean>
+
+	<bean id="character5" class="com.tud2016Hibernate.model.Character">
+		<property name="nick" value="Character5" />
+		<property name="characterClass" value="Warlock" />
+		<property name="characterRace" value="Human" />
+		<property name="level" value="110" />
+	</bean>
+
+	<bean id="character6" class="com.tud2016Hibernate.model.Character">
+		<property name="nick" value="Character6" />
+		<property name="characterClass" value="Shadow Hunter" />
+		<property name="characterRace" value="Troll" />
+		<property name="level" value="100" />
+	</bean>
+
+	<bean id="character7" class="com.tud2016Hibernate.model.Character">
+		<property name="nick" value="Character7" />
+		<property name="characterClass" value="Necromancer" />
+		<property name="characterRace" value="Undead" />
+		<property name="level" value="70" />
+	</bean>
+
+	<bean id="character8" class="com.tud2016Hibernate.model.Character">
+		<property name="nick" value="Character8" />
+		<property name="characterClass" value="Demon Hunter" />
+		<property name="characterRace" value="Elf" />
+		<property name="level" value="90" />
+	</bean>
+
+	<bean id="character9" class="com.tud2016Hibernate.model.Character">
+		<property name="nick" value="Character9" />
+		<property name="characterClass" value="Druid" />
+		<property name="characterRace" value="Tauren" />
+		<property name="level" value="15" />
+	</bean>
+
+	<bean id="character10" class="com.tud2016Hibernate.model.Character">
+		<property name="nick" value="Character10" />
+		<property name="characterClass" value="Engineer" />
+		<property name="characterRace" value="Goblin" />
+		<property name="level" value="20" />
+	</bean>
+
+	<bean id="character11" class="com.tud2016Hibernate.model.Character">
+		<property name="nick" value="Character11" />
+		<property name="characterClass" value="Barbarian" />
+		<property name="characterRace" value="Human" />
 		<property name="level" value="95" />
 	</bean>
 </beans>
